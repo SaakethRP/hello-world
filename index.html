@@ -3,16 +3,39 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
+  <title>Dodgers Home Game Win Tracker</title>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+<div class="container">
+  <header>
+    <h1>⚾ LA Dodgers Home Game Win Tracker</h1>
+    <p class="subtitle">Tracking victories at Dodger Stadium</p>
+  </header>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+  <div class="stats-section">
+    <div class="win-counter">
+      <h2>Home Game Wins</h2>
+      <div class="counter-display" id="winCounter">0</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="addWinBtn" class="btn-primary">Add Home Game Win</button>
+    <button id="resetBtn" class="btn-secondary">Reset Counter</button>
+  </div>
+
+  <div class="wins-list-section">
+    <h3>Recent Wins</h3>
+    <ul id="winsList" class="wins-list">
+      <li class="empty-state">No wins recorded yet. Click "Add Home Game Win" to start tracking!</li>
+    </ul>
+  </div>
+</div>
+
+<script src="tracker.js"></script>
 
 </body>
 </html>
