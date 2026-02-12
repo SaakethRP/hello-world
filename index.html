@@ -27,6 +27,16 @@
     <button id="resetBtn" class="btn-secondary">Reset Counter</button>
   </div>
 
+  <div class="notification-section">
+    <h3>🔔 Phone Notifications</h3>
+    <p class="notification-desc">Get notified on your phone via Discord when a win is recorded. Paste a <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Discord webhook URL</a> below.</p>
+    <div class="webhook-input-group">
+      <input type="url" id="webhookUrl" placeholder="https://discord.com/api/webhooks/..." class="webhook-input">
+      <button id="saveWebhookBtn" class="btn-save">Save</button>
+    </div>
+    <div id="webhookStatus" class="webhook-status"></div>
+  </div>
+
   <div class="wins-list-section">
     <h3>Recent Wins</h3>
     <ul id="winsList" class="wins-list">

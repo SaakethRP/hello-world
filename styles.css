@@ -158,3 +158,78 @@ header h1 {
   color: #005A9C;
   font-size: 1.1em;
 }
+
+.notification-section {
+  padding: 30px;
+  background: #f0f6ff;
+  border-top: 2px solid #e0e0e0;
+}
+
+.notification-section h3 {
+  color: #005A9C;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+.notification-desc {
+  color: #555;
+  font-size: 0.95em;
+  margin-bottom: 15px;
+}
+
+.notification-desc a {
+  color: #005A9C;
+}
+
+.webhook-input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.webhook-input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 0.95em;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.webhook-input:focus {
+  border-color: #005A9C;
+}
+
+.btn-save {
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  background: #005A9C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-save:hover {
+  background: #004080;
+}
+
+.webhook-status {
+  margin-top: 10px;
+  font-size: 0.9em;
+  min-height: 1.2em;
+}
+
+.webhook-status.success {
+  color: #2e7d32;
+}
+
+.webhook-status.error {
+  color: #c62828;
+}
+
+.webhook-status.saved {
+  color: #005A9C;
+}
